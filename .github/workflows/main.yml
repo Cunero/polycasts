@@ -1,0 +1,18 @@
+            - nombre: Configurar el entorno Go
+  usos: acciones/setup-go@v5.5.0
+  con:
+    La versión Go para descargar (si es necesario) y usar. Compatible con especificaciones y rangos de Semver. Asegúrese de escribir esta opción entre comillas simples.
+    go-version: # opcional
+    # Ruta al archivo go.mod o go.work.
+    go-version-file: # opcional
+    # Establezca esta opción en verdadero si desea que la acción siempre busque la última versión disponible que cumpla con la especificación de la versión.
+    check-latest: # opcional
+    # Se usa para extraer distribuciones de Go de las versiones de Go. Dado que hay un valor predeterminado, normalmente el usuario no lo proporciona. Al ejecutar esta acción en github.com, el valor predeterminado es suficiente. Al ejecutar en GHES, puede pasar un token de acceso personal a github.com si experimenta limitaciones de velocidad.
+    token: # opcional, el valor predeterminado es ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    # Se utiliza para especificar si se necesita almacenamiento en caché. Establézcalo en verdadero si desea habilitar el almacenamiento en caché.
+    caché: # opcional, el valor predeterminado es verdadero
+    # Se utiliza para especificar la ruta a un archivo de dependencia - go.sum
+    ruta de dependencia de caché: # opcional
+    # Arquitectura de destino para Go. Ejemplos: x86, x64. Se usará la arquitectura del sistema por defecto.
+    arquitectura: # opcional
+          
