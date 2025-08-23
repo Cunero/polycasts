@@ -1,4 +1,5 @@
-#            - nombre: Configurar el entorno Go
+    #          - nombre: Configurar el entorno Go
+    #
   usos: acciones/setup-go@v5.5.0
   con: La versión Go para descargar (si es necesario) y usar. Compatible con especificaciones y rangos de Semver. Asegúrese de escribir esta opción entre comillas simples.
     # Ruta al archivo go.mod o go.work.
